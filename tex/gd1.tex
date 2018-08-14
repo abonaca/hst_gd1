@@ -29,6 +29,11 @@
 \documentclass[12pt]{article}
 \usepackage{phase1}
 
+\usepackage{graphicx}
+\usepackage{parskip} \setlength{\parindent}{0cm}
+
+\newcommand{\HST}{\textsl{HST}}
+
 \begin{document}
 
 %   1. SCIENTIFIC JUSTIFICATION
@@ -37,7 +42,34 @@
 %
 \justification          % Do not delete this command.
 % Enter your scientific justification here. 
-ENTER YOUR TEXT HERE.
+
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=\textwidth]{target_density.pdf}
+\end{center}
+\caption{
+(\emph{Left}) Color-magnitude diagram of the GD-1 region in PanSTARRS bands (small gray points) and likely GD-1 members (large blue points), selected on Gaia proper motions and PS1 photometry as in Price-Whelan \& Bonaca (2018).
+An old, metal-poor isochrone fits GD-1 at a distance of 8\,kpc (light blue line).
+(\emph{Right}) Predicted number of stars in combined ACS/WFC and WFC3/UVIS fields-of-view as a function of magnitude (light blue line), scaled from the average density of GD-1 members on the bright end (dark blue line).
+There are $\sim15$ member stars expected at $g\lesssim26$\,mag, which is observed at $\rm S/N\sim20$ in our setup.
+Combining 2--4 fields, depending on the local stream density, will yield proper motions accurate to $\sim3\,\rm km\,s^{-1}$.
+}
+\label{fig:density}
+\end{figure}
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=\textwidth]{pm_precision.pdf}
+\end{center}
+\caption{
+Proper motion offset between the spur (pink) and the stream (purple) in the fiducial GD-1 model (solid crosses).
+Model predictions convolved with final Gaia uncertainties are shown as faint error bars, while the \HST\ performance expected from this program is shown with filled circles.
+\HST\ is the only facility that can resolve velocity offsets on the order of $10\,\rm km\,s^{-1}$ at the distance of the GD-1 stream (labeled dashed circles).
+% , and thus constrain the perturber mass up to a factor of a few.
+}
+\label{fig:precision}
+\end{figure}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -47,7 +79,7 @@ ENTER YOUR TEXT HERE.
 %
 \describeobservations   % Do not delete this command.
 % Enter your observing description here.
-ENTER YOUR TEXT HERE.
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -57,7 +89,14 @@ ENTER YOUR TEXT HERE.
 %
 \specialreq             % Do not delete this command.
 % Justify your special requirements here, if any.
-ENTER YOUR TEXT HERE.
+We are requesting coordinated parallel observations with WFC3.
+GD-1 stream is wide enough to allow for simultaneous targeting with ACS and WFC3 ($\rm FWHM\sim0.5^\circ$, Grillmair \& Dionatos 2006).
+These parallel observations will increase the number of observed GD-1 members by 60\,\% and thus improve measured velocities by 20\,\%.
+
+For each field we request the same telescope orientation for both epochs.
+This will maximize the overlapping area between the two epochs, will minimize differential geometric distortion correction errors, and will yield similar spatial PSF variability in both epochs.
+
+% These parallel observations do not require special orientation constraints except that each orientation receives two separate visits so that we reach 2 orbit depth in each filter for each parallel field.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -67,7 +106,7 @@ ENTER YOUR TEXT HERE.
 %
 \coordinatedobs          % Do not delete this command.
 % Enter your coordinated observing plans here, if any.
-ENTER YOUR TEXT HERE.
+None.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -77,7 +116,9 @@ ENTER YOUR TEXT HERE.
 %
 \duplications           % Do not delete this command.
 % Enter your duplication justifications here, if any.
-ENTER YOUR TEXT HERE.
+We will observe all fields in two epochs to measure proper motions.
+This use does not constitute a duplication.
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
