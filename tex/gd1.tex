@@ -32,7 +32,15 @@
 \usepackage{graphicx}
 \usepackage{parskip} \setlength{\parindent}{0cm}
 
-\newcommand{\HST}{\textsl{HST}}
+\usepackage{titlesec}
+\titlespacing*{\section}{0pt}{0pt}{-3pt}
+
+\usepackage[backend=biber, style=authoryear-comp, doi=false, isbn=false, url=false, giveninits=false, minbibnames=1, maxbibnames=2, maxcitenames=2, uniquelist=false]{biblatex}
+\usepackage{bib4apps}
+\addbibresource[]{gd1.bib}
+
+\newcommand{\hst}{\textsl{HST}}
+\newcommand{\gaia}{\textsl{Gaia}}
 
 \begin{document}
 
@@ -41,8 +49,49 @@
 %
 %
 \justification          % Do not delete this command.
-% Enter your scientific justification here. 
 
+Clumpiness of matter on small scales remains one of the most pressing questions in cosmology and galaxy formation (Bullock \& Boylan-Kolchin 2017).
+In the $\Lambda$CDM model, clumps of dark matter with no baryons are expected to exist with masses as low as $10^{6}\rm\,M_\odot$ (Springel et al. 2008), while alternative models have a higher cut-off in the matter power spectrum (e.g., Bode et al. 2001, Hu et al. 2000).
+Cold stellar streams --- remnants of disrupted globular clusters discovered in the Galactic halo (Grillmair \& Carlin 2016) --- are unique and powerful tools to study the properties of mass and dark matter within the Galaxy (e.g., Bonaca \& Hogg 2018).
+For example, an encounter between a stellar stream and a dark matter subhalo perturbs the orderly structure of the stellar stream, produces density variations along the stream (e.g., Carlberg 2012), and, depending on geometry, possibly also folds a part of the stream (e.g., Yoon et al. 2011).
+Signatures of such interactions in any of the known Milky Way stellar streams would provide critical tests of dark matter theories.
+{\bf We propose to use \hst\ to measure high-precision proper motions of the GD-1 stellar stream, a nearby, dense stellar stream that shows possible signatures of subhalo perturbations.}
+
+\section*{GD-1 -- a halo stream with signatures of perturbation}
+The GD-1 stellar stream was discovered using photometry from the Sloan Digital Sky Survey (SDSS; Grillmair \& Dionatos 2006),
+and, in combination with handful of radial velocities for red giant star members, has been used to measure the mass and shape of the large-scale mass distribution within the Galaxy (Koposov et al. 2010; Bovy et al. 2016).
+Using deeper photometry, de Boer at al. (2018) noted density variations along the stream and possible deviations of the main stream track that are not expected from simple models of the stream formation.
+However, photometric studies alone suffer from significant contamination from background and foreground stars.
+As an alternative approach to selecting likely GD-1 members, Price-Whelan \& Bonaca (2018) mapped the stream additionally selecting members using the exquisite proper motions from the \textit{Gaia} mission (Figure~).
+This relatively contamination-free view of the stream reveals two significant gaps along the stream, one of which is associated with a spur of member stars parallel to the main stream, but offset from it by $\sim1^\circ$.
+Such morphology can result from a stream interaction with a massive perturber (Figure~\ref{fig:fiducial}).
+
+\begin{figure}
+\begin{center}
+\includegraphics[height=7cm]{loop_evolution.pdf}
+\hspace{0.5cm}
+\includegraphics[height=7cm]{fiducial_comparison.pdf}
+\end{center}
+\caption{
+(\emph{Left}) Simulation of a stream following a flyby of a massive perturber below the stream.
+Initially at the top, the stream evolves on a circular orbit and snapshots after every 70\,Myr are presented in successively darker colors.
+(\emph{Right}) The final snapshot of a simulated stream (bottom) displays features observed in GD-1 (top): a gap, a spur of stars to one side of the gap, and a density enhancement along the stream opposite from the spur.
+\textbf{Proposed \hst\ observations will establish the origin of nonuniform structures in GD-1.}
+}
+\label{fig:fiducial}
+\end{figure}
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=0.8\textwidth]{lethe.jpg}
+\end{center}
+\caption{
+A proper motion analysis of a field in the Lethe stream from \textcite{sohn2016}.
+Much like GD-1, Lethe is a thin, nearby stream and its members (circled data points) have been identified as following an old and metal-poor isochrone placed at 12\,kpc in the color-magnitude diagram (\emph{left}) that are kinematically cold in proper motions (\emph{right}).
+Lethe is less prominent than GD-1, and thus sets a lower limit on the signal expected from GD-1 observed using a similar observational setup.
+}
+\label{fig:lethe}
+\end{figure}
 
 \begin{figure}
 \begin{center}
@@ -53,7 +102,7 @@
 An old, metal-poor isochrone fits GD-1 at a distance of 8\,kpc (light blue line).
 (\emph{Right}) Predicted number of stars in combined ACS/WFC and WFC3/UVIS fields-of-view as a function of magnitude (light blue line), scaled from the average density of GD-1 members on the bright end (dark blue line).
 There are $\sim15$ member stars expected at $g\lesssim26$\,mag, which is observed at $\rm S/N\sim20$ in our setup.
-Combining 2--4 fields, depending on the local stream density, will yield proper motions accurate to $\sim3\,\rm km\,s^{-1}$.
+Combining 2--4 fields, depending on the local stream density, \textbf{this project will yield GD-1 proper motions accurate to $\sim3\,\rm km\,s^{-1}$}.
 }
 \label{fig:density}
 \end{figure}
@@ -64,8 +113,8 @@ Combining 2--4 fields, depending on the local stream density, will yield proper 
 \end{center}
 \caption{
 Proper motion offset between the spur (pink) and the stream (purple) in the fiducial GD-1 model (solid crosses).
-Model predictions convolved with final Gaia uncertainties are shown as faint error bars, while the \HST\ performance expected from this program is shown with filled circles.
-\HST\ is the only facility that can resolve velocity offsets on the order of $10\,\rm km\,s^{-1}$ at the distance of the GD-1 stream (labeled dashed circles).
+Model predictions convolved with final Gaia uncertainties are shown as faint error bars, while the \hst\ performance expected from this program is shown with filled circles.
+\hst\ is the only facility that can resolve velocity offsets on the order of $10\,\rm km\,s^{-1}$ at the distance of the GD-1 stream (labeled dashed circles).
 % , and thus constrain the perturber mass up to a factor of a few.
 }
 \label{fig:precision}
@@ -78,7 +127,73 @@ Model predictions convolved with final Gaia uncertainties are shown as faint err
 %
 %
 \describeobservations   % Do not delete this command.
-% Enter your observing description here.
+\section*{Astrometry with \hst}
+Even in the era of \gaia, \hst\ has unparalleled astrometric capabilities for faint and distant targets.
+Source displacements can be measured over time to produce extremely accurate proper motions thanks to the well established geometric distortion solutions, PSF calibrations, and measurement techniques \parencite[e.g.,][]{anderson2003}.
+Through the past decade, \hst\ has been used to study internal dynamics in the Milky Way satellites by measuring relative motions \parencite[e.g., ][]{anderson2010} and also to measure absolute motions of these objects as they orbit the Milky Way.
+Quasars have conventionally been used as stationary reference sources in HST PM studies of satellite galaxies \parencite[e.g.,][]{kallivayalil2006, kallivayalil2013, piatek2008}, and this has revolutionized our understanding of the Magellanic Clouds \parencite{besla2007}.
+However, quasars are sparsely distributed on the sky, and there is generally at most one quasar in an \hst\ field.
+Often, a field of interest contains no known quasars.
+
+Recently, a new technique of absolute astrometry with \hst\ has been developed using distant background galaxies as reference sources \parencite[e.g.,][]{mahmud2008, sohn2012,sohn2013}.
+There are many (typically $N\sim100$) astrometrically useful background galaxies in any deep \hst\ image.
+This provides two advantages over quasars.
+First, by averaging one obtains a $\sqrt{N}$ improvement in astrometric accuracy, even if any individual background galaxy can not be centroided as accurately as a point source (quasar).
+Background galaxies also sample a large part of the detector, which reduces systematic errors.
+Second, by using background galaxies it is possible to perform absolute astrometry on any field with deep multi-epoch \hst\ imaging.
+It is the combination of these two advantages that makes the project we propose here possible.
+This technique has already been demonstrated to yield proper motions of galaxies accurate to $\sim0.01-0.03\,\rm mas\,yr^{-1}$ (M31, \cite{sohn2012,vdmarel2012a,vdmarel2012b} and Leo~I, \cite{sohn2013}), the motions of a small sample of distant stars in the Milky Way halo \parencite{deason2013}, the motions of stars in the Sagittarius stream \parencite{sohn2015}, and, particularly pertaining to this project, the motions of stars in cold streams such as Lethe \parencite[Figure~\ref{fig:lethe},][]{sohn2016}.
+
+
+\section*{Target fields and stellar density}
+In hopes of leveraging existing data, yielding large time baselines, and minimizing the need for new orbits, we searched the \hst\ archive for existing deep imaging serendipitously located on the GD-1 stream features reported in \textcite{pwb2018}.
+Unfortunately, no suitable fields were identified for use as first epoch for our astrometric study, so we selected 3 new fields to be observed in two epochs: two on either side of the GD-1 gap located at $\phi_1\approx-20^\circ$, and one on the associated spur.
+The fields are shown in Figure~\ref{fig:fields} and listed in Table~\ref{t:fields}.
+
+We estimated the expected number of stream stars in each field as follows.
+We adopt an isochrone with age, metallicity, and distance from \textcite{koposov2010}, and generate a corresponding luminosity function in the PanSTARRS1 g band \parencite[Figure~\ref{fig:density},][]{dotter2008}.
+We then analyze the GD-1 sample from \textcite{pwb2018}, and find the total number of stars selected on \gaia\ proper motions and PanSTARRS photometry along the whole stream.
+We choose this large area rather than one that matches the ACS and WFC3 fields to avoid small number statistics in \gaia.
+We then use the cumulative distribution of these stars to normalize the luminosity function between $g\approx18$ and $g\approx20$ (where the \gaia\ sample is complete, marked by a solid, dark blue line in Figure~\ref{fig:density}), and then plot the corresponding number of GD-1 stars in a combined ACS/WFC and WFC3/UVIS field of view as a function of magnitude (light blue line).
+This tells us the number of GD-1 stream stars we will detect in a pointing down to a given apparent magnitude.
+To yield a sufficient number of stars for precise photometry, we will observe 2 pointings on the stream fields.
+The stellar density in the spur is a factor of $\approx3$ lower than in the main stream \parencite[compare Figure~5 in][]{pwb2018}, so to compensate, we will observe 4 pointings on the spur field.
+
+\section*{Observing strategy}
+We will observe each ACS field in the F814W band for 3 orbits in the first epoch and 3 orbits in the second epoch to do the astrometry.
+The number of orbits per epoch is dictated by the need to construct high S/N templates of a sufficient number of background galaxies, and has been empirically established \parencite[e.g.,][]{sohn2012}. 
+We will also observe for 1 orbit in F606W, so that we can construct a color-magnitude diagram for each field.
+We will select GD-1 stars for the final analysis (and reject foreground stars and other objects) by selecting stars in both CMD and proper motion space (compare Figure~\ref{fig:lethe}).
+The colors need not be as accurate as the astrometry, so 1 orbit in F606W suffices.
+All individual exposures will be sub-pixel dithered and will last half an orbit or less.
+We also request coordinated parallel observations with WFC3, which will also point at the GD-1 stream.
+
+\section*{Expected accuracy}
+There are $N=100$ astrometrically useful background galaxies per \hst\ field \parencite[e.g.,][]{sohn2012,sohn2013}, and these can be centroided to an average of $\sim0.04$ pixels per galaxy, per half-orbit exposure.
+The position of an individual star can be determined to $\sim2(S/N)^{-1}$ pixels.
+With these estimates, it is possible to estimate the predicted proper motion (or velocity) accuracy as a function of stellar magnitude, given the known exposure times and time baselines.
+We find that proper motion accuracies remain useful down to apparent g-band magnitude $\sim26$, where the velocity error $\Delta V\approx15\,\rm km\,s^{-1}$ at the distance of GD-1.
+Figure~\ref{fig:precision} shows that we expect $N\approx15$ stars down to this limit in a combined ACS and WFC3 pointing, or a total of $N\approx30$ stars from 2 pointings in the stream fields, and $N\approx20$ stars from 4 pointings in the more diffuse spur field. 
+So the mean transverse velocity can be determined to a \emph{random} error of $\Delta V/\sqrt{N}\lesssim3\,\rm km\,s^{-1}$.
+The precision required to differentiate tangential motions in different GD-1 fields is $\sim5\,\rm km\,s^{-1}$, so further degradation in the \hst\ performance can be tolerated.
+ 
+\textcite{sohn2012, sohn2013} have shown that any \emph{systematic} proper motion errors can be controlled to $\lesssim0.04\,\rm mas\,yr^{-1}$ (i.e. $\lesssim2\,\rm km\,s^{-1}$ at the distance of the GD-1 stream).
+The ACS/WFC geometric distortion calibration is stable with time to $<0.005$\,pixels \parencite{anderson2007}.
+The impact of imperfect CCD CTE on ACS/WFC images will be corrected using a code that applies a time-dependent pixel-by-pixel correction directly to the flat-fielded images \parencite{andersonbedin2010}.
+Also, we will fit for PSF variations between epochs directly as part of our astrometric solutions.
+
+\section*{Measurement strategy}
+To measure the movement of stars with respect to background galaxies, we will start by creating a co-added frame based on all individual exposures of a field (similar to MultiDrizzle but better optimized for astrometry).
+SExtractor will then be run on the co-added frame to detect and classify all sources into point and extended sources.
+For the stars in the field, an ePSF \parencite[effective Point Spread Function;][]{anderson2003} will be created.
+Similarly, for each individual compact background galaxy a ``GSF'' will be created (a template of the galaxy that takes into account the galaxy morphology, the PSF, and the pixel binning).
+For each individual exposure in each epoch, we will fit all stars with the ePSF and all galaxies with their GSF.
+The inferred positions will be corrected to a geometrically undistorted frame using the available distortion solutions \parencite{anderson2004} and adopting six-parameter linear transformations to correct for any time-dependent linear skew variations \parencite{anderson2007}.
+We will then measure the displacement between the two epochs of the stars with respect to the background galaxies (using only closeby galaxies on the CCD of similar brightness, to minimize systematic errors due to CTE or geometric distortion residuals).
+The average of this quantity over all stream stars and all exposures of a given field gives the bulk proper motion of the stream in that particular field.
+
+
+\printbibliography[heading=none]
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -90,13 +205,11 @@ Model predictions convolved with final Gaia uncertainties are shown as faint err
 \specialreq             % Do not delete this command.
 % Justify your special requirements here, if any.
 We are requesting coordinated parallel observations with WFC3.
-GD-1 stream is wide enough to allow for simultaneous targeting with ACS and WFC3 ($\rm FWHM\sim0.5^\circ$, Grillmair \& Dionatos 2006).
+GD-1 stream is wide enough to allow for simultaneous targeting with ACS and WFC3 ($\rm FWHM\sim0.5^\circ$, Grillmair \& Dionatos 2006), and we will provide orientations to maximally recover the stream.
 These parallel observations will increase the number of observed GD-1 members by 60\,\% and thus improve measured velocities by 20\,\%.
 
 For each field we request the same telescope orientation for both epochs.
 This will maximize the overlapping area between the two epochs, will minimize differential geometric distortion correction errors, and will yield similar spatial PSF variability in both epochs.
-
-% These parallel observations do not require special orientation constraints except that each orientation receives two separate visits so that we reach 2 orbit depth in each filter for each parallel field.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
