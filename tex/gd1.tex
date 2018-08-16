@@ -66,17 +66,45 @@ As an alternative approach to selecting likely GD-1 members, Price-Whelan \& Bon
 This relatively contamination-free view of the stream reveals two significant gaps along the stream, one of which is associated with a spur of member stars parallel to the main stream, but offset from it by $\sim1^\circ$.
 Such morphology can result from a stream interaction with a massive perturber (Figure~\ref{fig:fiducial}).
 
+% \begin{figure}
+% \begin{center}
+% \includegraphics[height=7cm]{loop_evolution.pdf}
+% \hspace{0.5cm}
+% \includegraphics[height=7cm]{fiducial_comparison.pdf}
+% \end{center}
+% \caption{
+% (\emph{Left}) Simulation of a stream following a flyby of a massive perturber below the stream.
+% Initially at the top, the stream evolves on a circular orbit and snapshots after every 70\,Myr are presented in successively darker colors.
+% (\emph{Right}) The final snapshot of a simulated stream (bottom) displays features observed in GD-1 (top): a gap, a spur of stars to one side of the gap, and a density enhancement along the stream opposite from the spur.
+% \textbf{Proposed \hst\ observations will establish the origin of nonuniform structures in GD-1.}
+% }
+% \label{fig:fiducial}
+% \end{figure}
+
 \begin{figure}
 \begin{center}
-\includegraphics[height=7cm]{loop_evolution.pdf}
-\hspace{0.5cm}
-\includegraphics[height=7cm]{fiducial_comparison.pdf}
+\includegraphics[width=\textwidth]{fields.pdf}
 \end{center}
 \caption{
-(\emph{Left}) Simulation of a stream following a flyby of a massive perturber below the stream.
-Initially at the top, the stream evolves on a circular orbit and snapshots after every 70\,Myr are presented in successively darker colors.
-(\emph{Right}) The final snapshot of a simulated stream (bottom) displays features observed in GD-1 (top): a gap, a spur of stars to one side of the gap, and a density enhancement along the stream opposite from the spur.
-\textbf{Proposed \hst\ observations will establish the origin of nonuniform structures in GD-1.}
+Likely GD-1 stream members in the stream reference frame, identified based on \gaia\ proper motions and position in the CMD \parencite{pwb2018}.
+Density variations are immediately apparent in this cleanest view of the stream to date.
+We propose to {\bf determine the origin of the stream gap} at $\phi_1\approx-40^\circ$ by using \hst\ proper motions measured in fields on both sides of the gap and in the spur extending from the gap (orange circles).
+}
+\label{fig:fields}
+\end{figure}
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=0.8\textwidth]{pm_forecasts.pdf}
+\end{center}
+\caption{
+(\emph{a}) A simulated GD-1-like stream interacts with a $3\times10^{7\,\rm M_\odot}$ perturber and after 0.5\,Gyr develops qualitative features observed in the GD-1 stream: a gap in the stream at the location of the closest approach, a loop of stars extending on the one side of the gap as a spur off from the main stream, and producing an overdensity on the other side of the gap.
+% (\emph{Top}) An interaction of a GD-1-like stream with a $3\times10^{7\,\rm M_\odot}$ perturber after 0.5\,Gyr develops qualitative features observed in the GD-1 stream: a gap in the stream at the location of closest approach, a loop of stars extending on the one side of the gap as a spur off from the main stream, and producing an overdensity on the other side of the gap.
+(\emph{b}) Stars in the loop are kinematically offset from the main stream.
+The sign of the offset is opposite on either side of the gap in at least one component of the tangential velocity, and a unique signature of interaction.
+(\emph{c}) Proper motions of the simulated GD-1 convolved with the expected end-of-mission \gaia\ uncertainties.
+(\emph{d}) Proper motions of the simulated GD-1 convolved with the expected \hst\ uncertainties.
+{\bf The interaction signature is evident in proper motions at the \hst\ precision}, but unresolved with the final \gaia\ data.
 }
 \label{fig:fiducial}
 \end{figure}
@@ -107,18 +135,18 @@ Combining 2--4 fields, depending on the local stream density, \textbf{this proje
 \label{fig:density}
 \end{figure}
 
-\begin{figure}
-\begin{center}
-\includegraphics[width=\textwidth]{pm_precision.pdf}
-\end{center}
-\caption{
-Proper motion offset between the spur (pink) and the stream (purple) in the fiducial GD-1 model (solid crosses).
-Model predictions convolved with final Gaia uncertainties are shown as faint error bars, while the \hst\ performance expected from this program is shown with filled circles.
-\hst\ is the only facility that can resolve velocity offsets on the order of $10\,\rm km\,s^{-1}$ at the distance of the GD-1 stream (labeled dashed circles).
-% , and thus constrain the perturber mass up to a factor of a few.
-}
-\label{fig:precision}
-\end{figure}
+% \begin{figure}
+% \begin{center}
+% \includegraphics[width=\textwidth]{pm_precision.pdf}
+% \end{center}
+% \caption{
+% Proper motion offset between the spur (pink) and the stream (purple) in the fiducial GD-1 model (solid crosses).
+% Model predictions convolved with final Gaia uncertainties are shown as faint error bars, while the \hst\ performance expected from this program is shown with filled circles.
+% \hst\ is the only facility that can resolve velocity offsets on the order of $10\,\rm km\,s^{-1}$ at the distance of the GD-1 stream (labeled dashed circles).
+% % , and thus constrain the perturber mass up to a factor of a few.
+% }
+% \label{fig:precision}
+% \end{figure}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -147,7 +175,7 @@ This technique has already been demonstrated to yield proper motions of galaxies
 
 \section*{Target fields and stellar density}
 In hopes of leveraging existing data, yielding large time baselines, and minimizing the need for new orbits, we searched the \hst\ archive for existing deep imaging serendipitously located on the GD-1 stream features reported in \textcite{pwb2018}.
-Unfortunately, no suitable fields were identified for use as first epoch for our astrometric study, so we selected 3 new fields to be observed in two epochs: two on either side of the GD-1 gap located at $\phi_1\approx-20^\circ$, and one on the associated spur.
+Unfortunately, no suitable fields were identified for use as first epoch for our astrometric study, so we selected 3 new fields to be observed in two epochs: two on either side of the GD-1 gap located at $\phi_1\approx-40^\circ$, and one on the associated spur.
 The fields are shown in Figure~\ref{fig:fields} and listed in Table~\ref{t:fields}.
 
 We estimated the expected number of stream stars in each field as follows.
