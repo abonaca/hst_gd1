@@ -28,12 +28,14 @@
 
 \documentclass[12pt]{article}
 \usepackage{phase1}
+\renewcommand{\floatpagefraction}{.85}
 
 \usepackage{graphicx}
 \usepackage{parskip} \setlength{\parindent}{0cm}
 
 \usepackage{titlesec}
 \titlespacing*{\section}{0pt}{0pt}{-3pt}
+\titlespacing*{\subsection}{0pt}{0pt}{-3pt}
 
 \usepackage[backend=biber, style=authoryear-comp, doi=false, isbn=false, url=false, giveninits=false, minbibnames=1, maxbibnames=2, maxcitenames=2, uniquelist=false]{biblatex}
 \usepackage{bib4apps}
@@ -50,36 +52,21 @@
 %
 \justification          % Do not delete this command.
 
-Clumpiness of matter on small scales remains one of the most pressing questions in cosmology and galaxy formation (Bullock \& Boylan-Kolchin 2017).
-In the $\Lambda$CDM model, clumps of dark matter with no baryons are expected to exist with masses as low as $10^{6}\rm\,M_\odot$ (Springel et al. 2008), while alternative models have a higher cut-off in the matter power spectrum (e.g., Bode et al. 2001, Hu et al. 2000).
-Cold stellar streams --- remnants of disrupted globular clusters discovered in the Galactic halo (Grillmair \& Carlin 2016) --- are unique and powerful tools to study the properties of mass and dark matter within the Galaxy (e.g., Bonaca \& Hogg 2018).
-For example, an encounter between a stellar stream and a dark matter subhalo perturbs the orderly structure of the stellar stream, produces density variations along the stream (e.g., Carlberg 2012), and, depending on geometry, possibly also folds a part of the stream (e.g., Yoon et al. 2011).
-Signatures of such interactions in any of the known Milky Way stellar streams would provide critical tests of dark matter theories.
-{\bf We propose to use \hst\ to measure high-precision proper motions of the GD-1 stellar stream, a nearby, dense stellar stream that shows possible signatures of subhalo perturbations.}
+Clumpiness of matter on small scales remains one of the most pressing questions in cosmology and galaxy formation \parencite{bullock2017}.
+In the $\Lambda$CDM model, clumps of dark matter with no baryons are expected to exist with masses as low as $10^{6}\rm\,M_\odot$ \parencite{springel2008}, while alternative models have a higher cut-off in the matter power spectrum \parencite[e.g.,][]{bode2001,hu2000}.
+Cold stellar streams --- remnants of disrupted globular clusters discovered in the Galactic halo \parencite{gc2016} --- are unique and powerful tools to study the properties of mass and dark matter within the Galaxy \parencite[e.g.,][]{bonaca2018}.
+In particular, an encounter between a stellar stream and a dark matter subhalo perturbs the orderly structure of the stellar stream, produces density variations along the stream \parencite[e.g.,][]{carlberg2012}, and, depending on geometry, possibly also folds a part of the stream \parencite[e.g.,][]{yoon2011}.
+{\bf We propose to use \hst\ to measure high-precision proper motions of the GD-1 stellar stream, a nearby, dense stellar stream that shows the signature of a recent encounter with a dark matter subhalo.}
+Definitive signatures of such an interaction would provide critical tests of dark matter theories.
 
-\section*{GD-1 -- a halo stream with signatures of perturbation}
-The GD-1 stellar stream was discovered using photometry from the Sloan Digital Sky Survey (SDSS; Grillmair \& Dionatos 2006),
-and, in combination with handful of radial velocities for red giant star members, has been used to measure the mass and shape of the large-scale mass distribution within the Galaxy (Koposov et al. 2010; Bovy et al. 2016).
-Using deeper photometry, de Boer at al. (2018) noted density variations along the stream and possible deviations of the main stream track that are not expected from simple models of the stream formation.
-However, photometric studies alone suffer from significant contamination from background and foreground stars.
-As an alternative approach to selecting likely GD-1 members, Price-Whelan \& Bonaca (2018) mapped the stream additionally selecting members using the exquisite proper motions from the \textit{Gaia} mission (Figure~).
-This relatively contamination-free view of the stream reveals two significant gaps along the stream, one of which is associated with a spur of member stars parallel to the main stream, but offset from it by $\sim1^\circ$.
-Such morphology can result from a stream interaction with a massive perturber (Figure~\ref{fig:fiducial}).
+\section*{Background: Testing the $\Lambda$CDM cosmology on small scales}
+- more details about the problem
 
-% \begin{figure}
-% \begin{center}
-% \includegraphics[height=7cm]{loop_evolution.pdf}
-% \hspace{0.5cm}
-% \includegraphics[height=7cm]{fiducial_comparison.pdf}
-% \end{center}
-% \caption{
-% (\emph{Left}) Simulation of a stream following a flyby of a massive perturber below the stream.
-% Initially at the top, the stream evolves on a circular orbit and snapshots after every 70\,Myr are presented in successively darker colors.
-% (\emph{Right}) The final snapshot of a simulated stream (bottom) displays features observed in GD-1 (top): a gap, a spur of stars to one side of the gap, and a density enhancement along the stream opposite from the spur.
-% \textbf{Proposed \hst\ observations will establish the origin of nonuniform structures in GD-1.}
-% }
-% \label{fig:fiducial}
-% \end{figure}
+\subsection*{Extragalactic searches for small-scale structure}
+- review lensing efforts
+
+\subsection*{Searches in the Milky Way using tidal streams}
+- stream results to date
 
 \begin{figure}
 \begin{center}
@@ -93,12 +80,27 @@ We propose to {\bf determine the origin of the stream gap} at $\phi_1\approx-40^
 \label{fig:fields}
 \end{figure}
 
+\section*{This proposal: Clumpiness of the Milky Way halo with the GD-1 stream}
+- both Galactic and extragalactic results exciting, but lacking specifics
+- here we have an opportunity to get extremely specific
+
+\subsection*{GD-1 -- a halo stream with signatures of perturbation}
+The GD-1 stellar stream was discovered using photometry from the Sloan Digital Sky Survey \parencite{grillmair2006},
+and, in combination with a handful of radial velocities for red giant star members, has been used to measure the mass and shape of the large-scale mass distribution within the Galaxy \parencite{koposov2010, bovy2016}.
+Using deeper photometry, \textcite{deboer2018} noted density variations along the stream and possible deviations of the main stream track that are not expected from simple models of the stream formation.
+However, photometric studies alone suffer from significant contamination from background and foreground stars.
+As an alternative approach to selecting likely GD-1 members, \textcite{pwb2018} mapped the stream additionally selecting members using the exquisite proper motions from the \gaia\ mission (Figure~\ref{fig:fields}).
+This relatively contamination-free view of the stream reveals two significant gaps along the stream.
+The stellar density in one of the gaps ($\phi_1\sim-20^\circ$) is at the level of remaining contamination, and possibly the location where the GD-1 progenitor completely disrupted (see Figure~2 in \cite{pwb2018}).
+The other gap ($\phi_1\sim-40^\circ$) is associated with a large stream overdensity ($\phi_1\lesssim-40^\circ$) and a spur of member stars ($\phi_1\gtrsim-40^\circ$) parallel to the main stream, but offset from it by $\sim1^\circ$.
+Such morphology can result from a stream interaction with a massive perturber (Figure~\ref{fig:fiducial}).
+
 \begin{figure}
 \begin{center}
-\includegraphics[width=0.8\textwidth]{pm_forecasts.pdf}
+\includegraphics[width=0.9\textwidth]{pm_forecasts.pdf}
 \end{center}
 \caption{
-(\emph{a}) A simulated GD-1-like stream interacts with a $3\times10^{7\,\rm M_\odot}$ perturber and after 0.5\,Gyr develops qualitative features observed in the GD-1 stream: a gap in the stream at the location of the closest approach, a loop of stars extending on the one side of the gap as a spur off from the main stream, and producing an overdensity on the other side of the gap.
+(\emph{a}) A simulated GD-1-like stream interacts with a $3\times10^7\,\rm M_\odot$ perturber and after 0.5\,Gyr develops qualitative features observed in the GD-1 stream: a gap in the stream at the location of the closest approach, a loop of stars extending on the one side of the gap as a spur off from the main stream, and producing an overdensity on the other side of the gap.
 % (\emph{Top}) An interaction of a GD-1-like stream with a $3\times10^{7\,\rm M_\odot}$ perturber after 0.5\,Gyr develops qualitative features observed in the GD-1 stream: a gap in the stream at the location of closest approach, a loop of stars extending on the one side of the gap as a spur off from the main stream, and producing an overdensity on the other side of the gap.
 (\emph{b}) Stars in the loop are kinematically offset from the main stream.
 The sign of the offset is opposite on either side of the gap in at least one component of the tangential velocity, and a unique signature of interaction.
@@ -108,6 +110,15 @@ The sign of the offset is opposite on either side of the gap in at least one com
 }
 \label{fig:fiducial}
 \end{figure}
+
+\subsection*{Proper motion offsets as a unique feature of a perturbed stream}
+A massive perturber passing by a thin stellar stream imparts a velocity kick to stars closest to the encounter \parencite[e.g.,][]{erkal2015}.
+As a result, a loop of stars is pulled off from their original orbits along the stream, thus opening a gap in the stream.
+Typically, the loop is aligned with the stream on both sides of the gap, producing a characteristic density profile \parencite[e.g.,][]{carlberg2013}.
+At certain impact geometries and viewing angles, however, one side of the loop can appear to extend from the gap, while being aligned with the stream on the opposite side (Figure~\ref{fig:fiducial}\,a).
+This conceptual model qualitatively matches features in GD-1, and has a unique kinematic signature.
+As the loop continues to expand, it has a relative velocity with respect to the adjacent stream stars (Figure~\ref{fig:fiducial}\,b).
+The velocity offset between stars in the loop and the main stream has the opposite sign on either side of the gap in at least one component of the tangential velocity.
 
 \begin{figure}
 \begin{center}
@@ -121,32 +132,37 @@ Lethe is less prominent than GD-1, and thus sets a lower limit on the signal exp
 \label{fig:lethe}
 \end{figure}
 
-\begin{figure}
-\begin{center}
-\includegraphics[width=\textwidth]{target_density.pdf}
-\end{center}
-\caption{
-(\emph{Left}) Color-magnitude diagram of the GD-1 region in PanSTARRS bands (small gray points) and likely GD-1 members (large blue points), selected on Gaia proper motions and PS1 photometry as in Price-Whelan \& Bonaca (2018).
-An old, metal-poor isochrone fits GD-1 at a distance of 8\,kpc (light blue line).
-(\emph{Right}) Predicted number of stars in combined ACS/WFC and WFC3/UVIS fields-of-view as a function of magnitude (light blue line), scaled from the average density of GD-1 members on the bright end (dark blue line).
-There are $\sim15$ member stars expected at $g\lesssim26$\,mag, which is observed at $\rm S/N\sim20$ in our setup.
-Combining 2--4 fields, depending on the local stream density, \textbf{this project will yield GD-1 proper motions accurate to $\sim3\,\rm km\,s^{-1}$}.
-}
-\label{fig:density}
-\end{figure}
+{\bf The key goal of this proposal is to measure tangential velocities in the perturbed region of GD-1 and establish the magnitude of velocity offsets between different locations.}
+Scenarios that produce GD-1-like morphology have the spur moving with a relative velocity of $\sim10\,\rm km\,s^{-1}$ with respect to the stream.
+In order to differentiate these features kinematically at the distance of GD-1, a proper motion precision of $\lesssim0.1\,\rm mas\,yr^{-1}$ is required.
+- feasible to measure with \hst\ -- scaling lethe
 
-% \begin{figure}
-% \begin{center}
-% \includegraphics[width=\textwidth]{pm_precision.pdf}
-% \end{center}
-% \caption{
-% Proper motion offset between the spur (pink) and the stream (purple) in the fiducial GD-1 model (solid crosses).
-% Model predictions convolved with final Gaia uncertainties are shown as faint error bars, while the \hst\ performance expected from this program is shown with filled circles.
-% \hst\ is the only facility that can resolve velocity offsets on the order of $10\,\rm km\,s^{-1}$ at the distance of the GD-1 stream (labeled dashed circles).
-% % , and thus constrain the perturber mass up to a factor of a few.
-% }
-% \label{fig:precision}
-% \end{figure}
+Although most of the dark matter subhalos in the inner Galaxy are disrupted by the disk \parencite{gk2017}, GD-1 is expected to have encountered $1-2$ massive subhalos in the past $\sim7$\,Gyr \parencite{erkal2016}.
+- if confirmed -- detailed geometry of impact from the magnitude and direction of the proper motion offsets
+- combined with the radial velocities, incoming targeted and from surveys
+- avenues for direct evidence from weak lensing in the Milky Way are being explored \parencite{vtilburg2018}
+- vision: search volume for the perturber (halometry reference)
+Alternatively, establishing the origin of the GD-1 gap is not an encounter will put stringent constraints on the population of massive subhalos in the inner Galaxy.
+
+\subsection*{Ancillary tests of dark matter}
+\emph{Absolute GD-1 motion:}
+- for testing the interaction scenario, we require high precision to distinguish relative velocities between the stream and the spur
+- this will also produce very precise absolute motions
+- expected to improve orbit / global modeling
+- proper motion gradient (check distance difference in two stream fields, cite us, fardal)
+
+\emph{Velocity dispersion in GD-1:}
+- limits for total heating, either from subhalos, or fuzzy dark matter
+- even with a few stars, after deconvolving observational uncertainties, can put limits on the intrinsic velocity dispersion, as in \textcite{sohn2016}
+
+\emph{Kinematic structure of the stellar halo:}
+- follow up on \parencite{deason2013}
+
+\section*{Why \hst\ is needed}
+This proposal requires velocity precision of x.
+Even though \gaia\ astrometry continues to revolutionize the field of Galactic dynamics, its expected performance is y at the distance of the GD-1 stream (see Figure~\ref{fig:fiducial}\,d).
+- observing from the ground
+\hst\ is the only facility currently capable of delivering high-precision proper motions for faint, distant stars.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -176,7 +192,22 @@ This technique has already been demonstrated to yield proper motions of galaxies
 \section*{Target fields and stellar density}
 In hopes of leveraging existing data, yielding large time baselines, and minimizing the need for new orbits, we searched the \hst\ archive for existing deep imaging serendipitously located on the GD-1 stream features reported in \textcite{pwb2018}.
 Unfortunately, no suitable fields were identified for use as first epoch for our astrometric study, so we selected 3 new fields to be observed in two epochs: two on either side of the GD-1 gap located at $\phi_1\approx-40^\circ$, and one on the associated spur.
-The fields are shown in Figure~\ref{fig:fields} and listed in Table~\ref{t:fields}.
+The fields are shown in Figure~\ref{fig:fields}.
+% and listed in Table~\ref{t:fields}.
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=\textwidth]{target_density.pdf}
+\end{center}
+\caption{
+(\emph{Left}) Color-magnitude diagram of the GD-1 region in PanSTARRS bands (small gray points) and likely GD-1 members (large blue points), selected on Gaia proper motions and PS1 photometry as in Price-Whelan \& Bonaca (2018).
+An old, metal-poor isochrone fits GD-1 at a distance of 8\,kpc (light blue line).
+(\emph{Right}) Predicted number of stars in combined ACS/WFC and WFC3/UVIS fields-of-view as a function of magnitude (light blue line), scaled from the average density of GD-1 members on the bright end (dark blue line).
+There are $\sim15$ member stars expected at $g\lesssim26$\,mag, which is observed at $\rm S/N\sim20$ in our setup.
+Combining 2--4 fields, depending on the local stream density, \textbf{this project will yield GD-1 proper motions accurate to $\sim3\,\rm km\,s^{-1}$}.
+}
+\label{fig:density}
+\end{figure}
 
 We estimated the expected number of stream stars in each field as follows.
 We adopt an isochrone with age, metallicity, and distance from \textcite{koposov2010}, and generate a corresponding luminosity function in the PanSTARRS1 g band \parencite[Figure~\ref{fig:density},][]{dotter2008}.
@@ -188,11 +219,11 @@ To yield a sufficient number of stars for precise photometry, we will observe 2 
 The stellar density in the spur is a factor of $\approx3$ lower than in the main stream \parencite[compare Figure~5 in][]{pwb2018}, so to compensate, we will observe 4 pointings on the spur field.
 
 \section*{Observing strategy}
-We will observe each ACS field in the F814W band for 3 orbits in the first epoch and 3 orbits in the second epoch to do the astrometry.
+We will observe each ACS field in the F606W band for 3 orbits in the first epoch and 3 orbits in the second epoch to do the astrometry.
 The number of orbits per epoch is dictated by the need to construct high S/N templates of a sufficient number of background galaxies, and has been empirically established \parencite[e.g.,][]{sohn2012}. 
-We will also observe for 1 orbit in F606W, so that we can construct a color-magnitude diagram for each field.
+We will also observe for 1 orbit in F814W, so that we can construct a color-magnitude diagram for each field.
 We will select GD-1 stars for the final analysis (and reject foreground stars and other objects) by selecting stars in both CMD and proper motion space (compare Figure~\ref{fig:lethe}).
-The colors need not be as accurate as the astrometry, so 1 orbit in F606W suffices.
+The colors need not be as accurate as the astrometry, so 1 orbit in F814W suffices.
 All individual exposures will be sub-pixel dithered and will last half an orbit or less.
 We also request coordinated parallel observations with WFC3, which will also point at the GD-1 stream.
 
@@ -201,7 +232,7 @@ There are $N=100$ astrometrically useful background galaxies per \hst\ field \pa
 The position of an individual star can be determined to $\sim2(S/N)^{-1}$ pixels.
 With these estimates, it is possible to estimate the predicted proper motion (or velocity) accuracy as a function of stellar magnitude, given the known exposure times and time baselines.
 We find that proper motion accuracies remain useful down to apparent g-band magnitude $\sim26$, where the velocity error $\Delta V\approx15\,\rm km\,s^{-1}$ at the distance of GD-1.
-Figure~\ref{fig:precision} shows that we expect $N\approx15$ stars down to this limit in a combined ACS and WFC3 pointing, or a total of $N\approx30$ stars from 2 pointings in the stream fields, and $N\approx20$ stars from 4 pointings in the more diffuse spur field. 
+Figure~\ref{fig:density} shows that we expect $N\approx15$ stars down to this limit in a combined ACS and WFC3 pointing, or a total of $N\approx30$ stars from 2 pointings in the stream fields, and $N\approx20$ stars from 4 pointings in the more diffuse spur field. 
 So the mean transverse velocity can be determined to a \emph{random} error of $\Delta V/\sqrt{N}\lesssim3\,\rm km\,s^{-1}$.
 The precision required to differentiate tangential motions in different GD-1 fields is $\sim5\,\rm km\,s^{-1}$, so further degradation in the \hst\ performance can be tolerated.
  

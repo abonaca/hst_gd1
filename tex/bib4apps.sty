@@ -24,7 +24,8 @@
 \defbibenvironment{bibliography}
   {\noindent}
   {\unspace}
-  {\printtext[labelnumberwidth]{\printfield{prefixnumber} \printfield{labelnumber}}\addspace}
+%   {\printtext[labelnumberwidth]{\printfield{prefixnumber} \printfield{labelnumber}}\addspace}
+  {\printtext[labelnumberwidth]{\printfield{labelprefix} \printfield{labelnumber}}\addspace}
 
 % use only last name in bibliography
 \DeclareNameFormat{lastname}{%
@@ -86,7 +87,8 @@
 \newcommand\prc{\ref@jnl{Phys.~Rev.~C}}% % Physical Review C 
 \newcommand\prd{\ref@jnl{Phys.~Rev.~D}}% % Physical Review D 
 \newcommand\pre{\ref@jnl{Phys.~Rev.~E}}% % Physical Review E 
-\newcommand\prl{\ref@jnl{Phys.~Rev.~Lett.}}% % Physical Review Letters 
+% \newcommand\prl{\ref@jnl{Phys.~Rev.~Lett.}}% % Physical Review Letters 
+\newcommand\prl{\ref@jnl{PRL}}% % Physical Review Letters 
 \newcommand\pasp{\ref@jnl{PASP}}%     % Publications of the ASP 
 \newcommand\pasj{\ref@jnl{PASJ}}%     % Publications of the ASJ 
 \newcommand\qjras{\ref@jnl{QJRAS}}%   % Quarterly Journal of the RAS 
@@ -103,6 +105,7 @@
 \newcommand\fcp{\ref@jnl{Fund.~Cosmic~Phys.}}%   % Fundamental Cosmic Physics 
 \newcommand\gca{\ref@jnl{Geochim.~Cosmochim.~Acta}}% % Geochimica Cosmochimica Acta 
 \newcommand\grl{\ref@jnl{Geophys.~Res.~Lett.}}%  % Geophysics Research Letters 
+\newcommand\jcap{\ref@jnl{JCAP}}%     % Journal of Cosmology and Astroparticle Physics
 \newcommand\jcp{\ref@jnl{J.~Chem.~Phys.}}%     % Journal of Chemical Physics 
 \newcommand\jgr{\ref@jnl{J.~Geophys.~Res.}}%     % Journal of Geophysics Research 
 \newcommand\jqsrt{\ref@jnl{J.~Quant.~Spec.~Radiat.~Transf.}}%   % Journal of Quantitiative Spectroscopy and Radiative Trasfer 
