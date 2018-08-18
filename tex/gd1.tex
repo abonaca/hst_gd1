@@ -34,8 +34,8 @@
 \usepackage{parskip} \setlength{\parindent}{0cm}
 
 \usepackage{titlesec}
-\titlespacing*{\section}{0pt}{0pt}{-3pt}
-\titlespacing*{\subsection}{0pt}{0pt}{-3pt}
+\titlespacing*{\section}{0pt}{0pt}{-2pt}
+\titlespacing*{\subsection}{0pt}{0pt}{-2pt}
 
 \usepackage[backend=biber, style=authoryear-comp, doi=false, isbn=false, url=false, giveninits=false, minbibnames=1, maxbibnames=2, maxcitenames=2, uniquelist=false]{biblatex}
 \usepackage{bib4apps}
@@ -54,29 +54,30 @@
 \vspace{-0.5cm}
 
 Clumpiness of matter on small scales remains one of the most pressing questions in cosmology and galaxy formation \parencite{bullock2017}.
-In the $\Lambda$CDM model, clumps of dark matter with no baryons are expected to exist with masses as low as $10^{6}\rm\,M_\odot$ \parencite{springel2008}, while alternative models have a higher cut-off in the matter power spectrum \parencite[e.g.,][]{bode2001,hu2000}.
+In the $\Lambda$CDM model, clumps of dark matter (referred to as ``dark matter halos'') with no baryons are expected to exist with masses as low as $10^{6}\rm\,M_\odot$ \parencite{springel2008}, while alternative models have a higher cut-off in the matter power spectrum \parencite[e.g.,][]{bode2001,hu2000}.
 Cold stellar streams --- remnants of disrupted globular clusters discovered in the Galactic halo \parencite{gc2016} --- are unique and powerful tools to study the properties of mass and dark matter within the Galaxy \parencite[e.g.,][]{bonaca2018}.
 In particular, an encounter between a stellar stream and a dark matter subhalo perturbs the orderly structure of the stellar stream, produces density variations along the stream \parencite[e.g.,][]{carlberg2012}, and, depending on geometry, possibly also folds a part of the stream \parencite[e.g.,][]{yoon2011}.
 {\bf We propose to use \hst\ to measure high-precision proper motions of the GD-1 stellar stream, a nearby, dense stellar stream that shows the signature of a recent encounter with a dark matter subhalo.}
-Definitive signatures of such an interaction would provide critical tests of dark matter theories.
+Definitive signatures of an interaction between a stellar stream and a dark matter halo would herald a new era of observational cosmology.
+% Definitive signatures of such an interaction would provide critical tests of dark matter theories.
 
 \section*{Background: Testing the $\Lambda$CDM cosmology on small scales}
-Upon inception, theoretical predictions of the $\Lambda$CDM universe met with favorable comparison to observations: galaxies grow hierarchically and they are clustered on large scales.
+Upon inception, theoretical predictions of the $\Lambda$CDM universe met with favorable comparison to observations: galaxies grow hierarchically and they are clustered on a range of scales.
 With the increase in resolution came discrepancies, chief of which is that simulated $\Lambda$CDM galaxies have too many satellites.
-Within the dark matter cosmological framework, there are two classes of solutions within that aim to reconcile these observations: either (1) small halos of dark matter do not exist (implying an ultra-light or a moderately massive dark matter particle), or (2) they exist, but have escaped our detection because they host no stars (and dark matter particle is very massive).
-If these small halos exist, they still exert gravitational influence, so a number of searches for dark matter structure on small scales have been launched to distinguish between these scenarios.
+Within the prevalent cosmological framework, there are two classes of solutions that aim to reconcile these observations: either (1) small halos of dark matter do not exist (implying an ultra-light or a moderately massive dark matter particle), or (2) they exist, but have escaped our detection because they host no stars (and dark matter particle is very massive).
+If these small halos exist, they still exert gravitational influence, so a number of searches for dark matter structure on small scales have been launched to distinguish between these scenarios and constrain the nature of dark matter.
 
 \subsection*{Extragalactic searches for small-scale structure}
 Gravitational lensing is a promising way to search for dark matter subhalos in a cosmological setting.
-- lensing anomalies mapped to subhalos
-As an ultimate test of the CDM paradigm, lensing can be applied to a number of systems, but only massive objects have been detected so far.
-Objects of this mass in the local universe host stars, so increases in sensitivity are sought after.
+Some strongly lensed galaxies require the presence of a subhalo in the lens plane to fully explain the distribution of light in the lensed system.
+Subhalos in the mass regime $10^8-10^9\,\rm M_\odot$ have been identified in a number of lenses \parencite[e.g.,][]{vegetti2012,hezaveh2016}.
+However, objects of this mass in the local universe host stars, so the search for truly dark subhalos continues, primarily by increasing the sample size of analyzed systems.
 
 \subsection*{Subhalo searches in the Milky Way using tidal streams}
 In the local universe, counts of density gaps in thin stellar streams have been mapped to the abundance of dark matter subhalos down to $\sim10^6\,\rm M_\odot$ \parencite[e.g.,][]{carlberg2012,carlberg2013b}.
 In addition to dark matter subhalos, a number of physical processes can perturb streams at this level \parencite[e.g.,][]{kupper2008, amorisco2016}.
 As a result, no stream has definitively established the presence of dark matter substructure.
-However, thanks to a recent \gaia\ discovery of a perturbation site in the GD-1 stream, we now have a prime target for follow-up.
+However, thanks to a recent \gaia\ discovery of a perturbation site in the GD-1 stream, we now have a prime candidate for dark matter influence on a stellar stream.
 
 \begin{figure}
 \begin{center}
@@ -91,8 +92,6 @@ Density variations are immediately apparent in this cleanest view of the stream 
 \end{figure}
 
 \section*{This proposal: Clumpiness of the Milky Way halo with the GD-1 stream}
-% - both Galactic and extragalactic results exciting, but lacking specifics
-% - here we have an opportunity to get extremely specific
 
 \subsection*{GD-1 -- a halo stream with signatures of perturbation}
 The GD-1 stellar stream was discovered using photometry from the Sloan Digital Sky Survey \parencite{grillmair2006},
@@ -137,7 +136,10 @@ Uniquely, the velocity offset between stars in the loop and the main stream has 
 \caption{
 A proper motion analysis of a field in the Lethe stream from \textcite{sohn2016}.
 Much like GD-1, Lethe is a thin, nearby stream and its members (circled data points) have been identified as following an old and metal-poor isochrone placed at 12\,kpc in the color-magnitude diagram (\emph{left}) that are kinematically cold in proper motions (\emph{right}).
-Lethe is less prominent than GD-1, and thus sets a lower limit on the signal expected from GD-1 observed using a similar observational setup.
+Accommodating for the differences in the stream density and time baseline between the Lethe study and this proposal, we estimate that the precision of average GD-1 proper motions reaches the level of Lethe when two \hst\ fields are combined.
+There were 3 Lethe members in an ACS field, and proper motions were measured to $\sim0.05\,\rm mas\,yr^{-1}$.
+Scaling to GD-1, and averaging over 2 fields, proper motions will be measured to $\sim0.06\,\rm mas\,yr^{-1}$, well below our targeted precision of $\sim0.1\,\rm mas\,yr^{-1}$.
+% Lethe is less prominent than GD-1, and thus sets a lower limit on the signal expected from GD-1 observed using a similar observational setup.
 }
 \label{fig:lethe}
 \end{figure}
@@ -152,9 +154,16 @@ Taking into account different time baselines (10\,yrs for Lethe and 3\,yrs for G
 Accounting for the disruption of subhalos by the Galactic disk \parencite{gk2017}, GD-1 is expected to have encountered $1-2$ massive subhalos in the past $\sim7$\,Gyr \parencite{erkal2016}.
 If the measured velocity offsets confirm that the gap at $\phi\sim-40^\circ$ was caused by a subhalo impact, their magnitude and direction will further constrain the geometry of the encounter.
 % Combined with radial velocity data, from our ongoing follow-up, as well as public surveys \parencite[e.g.,][]{}, .
-With the details of a known encounter in hand, the current location of the perturber will be uncertain only due to the mass-velocity degeneracy.
+With the details of a known encounter in hand, the current location of the perturber will be uncertain only due to the mass--velocity degeneracy.
 Such a prediction might provide an exciting search volume for direct observations of subhalos via weak lensing \parencite{vtilburg2018}.
 Alternatively, establishing that the prime GD-1 gap is not due to an encounter will put a stringent upper limit on the abundance of massive subhalos in the inner Galaxy.
+
+\emph{Discarding false positive scenarios:}
+Even in the absence of perturbations, stellar density along a stream varies due to orbital precession of stream stars around the progenitor's orbit \parencite[e.g.,][]{kupper2008}.
+If the GD-1 gap is a result of internal stream dynamics, and the nearby spur is simply a chance alignment, then there should be no kinematic offsets in the stream field opposite from the spur.
+On the other hand, the gap can be produced in an interaction with a known satellite or a massive molecular cloud.
+Recently measured orbits of the halo satellites \parencite{helmi2018} imply that none come sufficiently close to GD-1 to create the gap at $\phi_1\sim-40^\circ$.
+If the perturbation is caused by a molecular cloud, the direction of velocity offsets will be set by the geometry of GD-1 crossing the Milky Way disk, and can be directly compared to the measured offsets.
 
 \subsection*{Ancillary tests of dark matter}
 While the main goal of this proposal is to establish whether GD-1 was perturbed by a dark matter subhalo, the resulting data can be used to further test the cosmological paradigm.
@@ -167,11 +176,16 @@ Following this work, the absolute proper motions of GD-1 will be known to an unp
 These high-quality data will permit the study of a thin stream in realistic models of the Galaxy for the first time.
 
 \emph{Velocity dispersion in GD-1:}
-- limits for total heating, either from subhalos, or fuzzy dark matter
-- even with a few stars, after deconvolving observational uncertainties, can put limits on the intrinsic velocity dispersion, as in \textcite{sohn2016}
+Streams originating from globular clusters, such as GD-1, are formed kinematically very cold.
+As they age and orbit the Milky Way, small perturbations heat these streams, so a measured velocity dispersion translates into an upper limit on the amount of small perturbers.
+The perturbers can be very low-mass subhalos \parencite[e.g.,][]{yoon2011}, or more exotic, transient clumps of fuzzy dark matter \parencite[e.g.,][]{amorisco2018}.
+\textcite{sohn2016} have shown that precise \hst\ proper motions can constrain the one-dimensional tangential velocity dispersion even in targets with only a handful of identified members.
+This project will produce a comparable data set, able to resolve velocity dispersion in GD-1 of a few $\rm km\,s^{-1}$.
 
-\emph{Kinematic structure of the stellar halo:}
-- follow up on \parencite{deason2013}
+% \emph{Kinematic structure of the stellar halo:}
+% Distant halo stars are important kinematic tracers of the mass enclosed in the Galaxy, but can only provide an unbiased measurement if their velocity dispersion is known in all three dimensions.
+% So far, velocity anisotropy of the distant halo has only been measured in pencil beams \parencite[e.g.,][]{deason2013}.
+% An analysis of halo stars observed through this project will provide a handle on their kinematic homogeneity and move us towards a more global view of the stellar halo.
 
 \section*{Why \hst\ is needed}
 This proposal requires proper motions of faint stars precise to $\lesssim0.1\,\rm mas\, yr^{-1}$.
